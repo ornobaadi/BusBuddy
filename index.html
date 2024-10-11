@@ -12,8 +12,14 @@
     <!-- Google Font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Raleway Font  -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <!-- Inter Font  -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
     <script>
         tailwind.config = {
             theme: {
@@ -29,6 +35,10 @@
     <style>
         .font-raleway {
             font-family: "Raleway", sans-serif;
+        }
+
+        .font-inter {
+            font-family: "Inter", sans-serif;
         }
     </style>
 </head>
@@ -55,7 +65,7 @@
                                 <li><a>Search</a></li>
                             </ul>
                         </div>
-                        <a class="btn btn-ghost text-2xl font-extrabold">BusBuddy</a>
+                        <a class="btn btn-ghost text-3xl font-extrabold">BusBuddy</a>
                     </div>
                     <div class="navbar-center hidden lg:flex">
                         <ul class="menu menu-horizontal px-1 font-semibold gap-5">
@@ -66,9 +76,8 @@
                         </ul>
                     </div>
                     <div class="navbar-end">
-                        <a class="btn border-primary text-primary bg-background hover:bg-white font-bold">
+                        <a class="px-6 btn border-primary text-primary bg-background hover:bg-white font-bold">
                             Bus<img src="images/bus-icon.png" alt=""></a>
-
                     </div>
                 </div>
             </div>
@@ -76,19 +85,74 @@
     </header>
     <main class="w-11/12 mx-auto">
         <!-- Banner Section  -->
-        <section class="">
+        <section class="font-inter relative mb-40">
+            <!-- Hero Section -->
             <div class="hero min-h-[700px] rounded-3xl" style="background-image: url(images/banner.png);">
                 <div class="bg-opacity-30"></div>
                 <div class="hero-content text-neutral-content text-center">
                     <div class="max-w-xl">
-                        <h1 class="mb-5 text-5xl text-white font-bold">End-to-End Travel with <br> <span
-                                class="text-primary">BusBuddy</h1>
-                        <p class="mb-5">
+                        <h1 class="mb-5 text-5xl text-white font-bold">End-to-End Travel with <br>
+                            <span class="text-primary">BusBuddy</span>
+                        </h1>
+                        <p class="mb-10">
                             Yes, you can run unit tests and view the results directly within the app. The integrated
-                            testing features allow for a streamlined .
+                            testing features allow for a streamlined experience.
                         </p>
-                        <button class="btn px-6 bg-primary border-none text-black text-lg font-bold">Buy
+                        <button class="btn px-10 bg-primary border-none text-black text-lg font-bold">Buy
                             Tickets</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Centered Stats Section -->
+            <div class="absolute top-[650px] w-full px-10 flex justify-center mb-10">
+                <!-- Changed justify-evenly to justify-center -->
+                <div class="flex gap-6">
+                    <!-- Stat 1 -->
+                    <div class="stats border-2 p-3 shadow-md shadow-primary mx-4">
+                        <div class="stat flex">
+                            <img src="images/people.png" alt="People Icon" class="mr-3">
+                            <div>
+                                <h1 class="stat-value">500K+</h1>
+                                <p class="stat-desc">Registered Users</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stat 2 -->
+                    <div class="stats border-2 p-3 shadow-md shadow-primary mx-4">
+                        <div class="stat flex">
+                            <img src="images/people.png" alt="Tickets Icon" class="mr-3">
+                            <div>
+                                <h1 class="stat-value">1.3 Lacks</h1>
+                                <p class="stat-desc">Tickets Sold</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stat 3 -->
+                    <div class="stats border-2 p-3 shadow-md shadow-primary mx-4">
+                        <div class="stat flex">
+                            <img src="images/people.png" alt="Bus Icon" class="mr-3">
+                            <div>
+                                <h1 class="stat-value">80K+</h1>
+                                <p class="stat-desc">Rental Partners</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="hero py-10">
+                <div class="hero-content text-center">
+                    <div class="max-w-md">
+                        <h1 class="text-5xl font-bold my-5">Best offers for you</h1>
+                        <div>
+
+                        </div>
+                        <button class="btn border-[#1DD100] text-primary font-bold px-10 my-5">See All Offers</button>
                     </div>
                 </div>
             </div>
